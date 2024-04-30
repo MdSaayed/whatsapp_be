@@ -1,4 +1,5 @@
 import app from "./app.js";
+import logger from "./configs/logger.config.js";
 
 
 
@@ -7,7 +8,7 @@ const PORT = process.env.PORT || 8001;
 console.log(process.env.NODE_ENV)
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`); 
+    logger.info(`Server is listening on port ${PORT}`);  
 });
 
 
